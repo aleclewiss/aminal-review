@@ -1,14 +1,16 @@
 {
- "generated": "2026-09-01T12:13:43+00:00",
+ "generated": "2026-09-01T12:26:56+00:00",
  "items": [
   {
-   "stem": "video_corgis_hero_REMOTETEST",
-   "title": "DO NOT APPROVE - remote pipeline test",
+   "stem": "video_dachshunds_hero_20260901_082319",
+   "title": "Dachshunds are built different",
    "channel": "aminal",
-   "category": "corgis",
-   "queued_at": "2026-09-01T08:20:00",
-   "size_mb": 6.9,
-   "url": "https://s3.us-east-005.backblazeb2.com/aminal-house-staging/review/video_corgis_hero_REMOTETEST.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0053485a00580520000000002%2F20260901%2Fus-east-005%2Fs3%2Faws4_request&X-Amz-Date=20260901T121343Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e7964b8b38e2435e233a0705173f2938e99d426f5878e635532c9c6c400fea72"
+   "category": "dachshunds",
+   "queued_at": "2026-09-01T08:26:41",
+   "size_mb": 13.5,
+   "url": "https://s3.us-east-005.backblazeb2.com/aminal-house-staging/review/video_dachshunds_hero_20260901_082319.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0053485a00580520000000002%2F20260901%2Fus-east-005%2Fs3%2Faws4_request&X-Amz-Date=20260901T122656Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=68fb4111c8e5f4d17021dd3929cd5d2d28061acc5bb8d3a90798c68d9092d573",
+   "approve_url": "https://s3.us-east-005.backblazeb2.com/aminal-house-staging/verdicts/video_dachshunds_hero_20260901_082319.approve?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0053485a00580520000000002%2F20260901%2Fus-east-005%2Fs3%2Faws4_request&X-Amz-Date=20260901T122656Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=02afcbb4939c12b1205e6dfcf6fcd295243cd5ef00d05100accdcc106dadc1f9",
+   "reject_url": "https://s3.us-east-005.backblazeb2.com/aminal-house-staging/verdicts/video_dachshunds_hero_20260901_082319.reject?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0053485a00580520000000002%2F20260901%2Fus-east-005%2Fs3%2Faws4_request&X-Amz-Date=20260901T122656Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8828ad538f18a0be329f8171a5a57ec2bd3a397078c4d93b5bce5588398baf2e"
   }
  ]
 }
