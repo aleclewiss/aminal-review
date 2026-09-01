@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-01T13:18:42+00:00",
+ "generated": "2026-09-01T13:19:45+00:00",
  "items": [
   {
    "stem": "video_dachshunds_top5_20260901_084641",
@@ -8,10 +8,10 @@
    "category": "dachshunds",
    "queued_at": "2026-09-01T09:05:19",
    "size_mb": 59.3,
-   "url": "https://s3.us-east-005.backblazeb2.com/aminal-house-staging/review/video_dachshunds_top5_20260901_084641.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0053485a00580520000000002%2F20260901%2Fus-east-005%2Fs3%2Faws4_request&X-Amz-Date=20260901T131842Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a9aeaa7aef2f35be25058b162a50ac0512104c750e6278d4a71888ce029779b8",
-   "approve_url": "https://s3.us-east-005.backblazeb2.com/aminal-house-staging/verdicts/video_dachshunds_top5_20260901_084641.approve?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0053485a00580520000000002%2F20260901%2Fus-east-005%2Fs3%2Faws4_request&X-Amz-Date=20260901T131842Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=efd2baf49c2bc3a4617b1567c3faaa00edbbf6550607b6582aa9da4c2d546028",
-   "reject_url": "https://s3.us-east-005.backblazeb2.com/aminal-house-staging/verdicts/video_dachshunds_top5_20260901_084641.reject?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0053485a00580520000000002%2F20260901%2Fus-east-005%2Fs3%2Faws4_request&X-Amz-Date=20260901T131842Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=511e5f51015436d56403542838cdfe9a52164118c9048b350c4e14c95627608c",
-   "hold_url": "https://s3.us-east-005.backblazeb2.com/aminal-house-staging/verdicts/video_dachshunds_top5_20260901_084641.hold?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0053485a00580520000000002%2F20260901%2Fus-east-005%2Fs3%2Faws4_request&X-Amz-Date=20260901T131842Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3560262e21a7760e593e45bdc17b43a8d12d5dc95c35757915901cf3f246c57e"
+   "url": "https://s3.us-east-005.backblazeb2.com/aminal-house-staging/review/video_dachshunds_top5_20260901_084641.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0053485a00580520000000002%2F20260901%2Fus-east-005%2Fs3%2Faws4_request&X-Amz-Date=20260901T131945Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d3c051d9cea4970bc9b62c8981e8dd79c5ba9094592245d3756b89861a266775",
+   "approve_url": "https://s3.us-east-005.backblazeb2.com/aminal-house-staging/verdicts/video_dachshunds_top5_20260901_084641.approve?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0053485a00580520000000002%2F20260901%2Fus-east-005%2Fs3%2Faws4_request&X-Amz-Date=20260901T131945Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=128218c01f02664d58cbc87fffbee3122f691c2821ff16d8a3e2c659140a7946",
+   "reject_url": "https://s3.us-east-005.backblazeb2.com/aminal-house-staging/verdicts/video_dachshunds_top5_20260901_084641.reject?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0053485a00580520000000002%2F20260901%2Fus-east-005%2Fs3%2Faws4_request&X-Amz-Date=20260901T131945Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3276ff6fc7017665d423aad395ddb9386a2c0115e34c09bd75536ebf85789892",
+   "hold_url": "https://s3.us-east-005.backblazeb2.com/aminal-house-staging/verdicts/video_dachshunds_top5_20260901_084641.hold?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0053485a00580520000000002%2F20260901%2Fus-east-005%2Fs3%2Faws4_request&X-Amz-Date=20260901T131945Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e36b24cd8fbb89ad9079026527165360f6c527cb383e2902923c9c9a8ed055ae"
   }
  ]
 }
