@@ -1,17 +1,4 @@
 {
- "generated": "2026-09-01T12:32:15+00:00",
- "items": [
-  {
-   "stem": "video_dachshunds_hero_20260901_082319",
-   "title": "Dachshunds are built different",
-   "channel": "aminal",
-   "category": "dachshunds",
-   "queued_at": "2026-09-01T08:26:41",
-   "size_mb": 13.5,
-   "url": "https://s3.us-east-005.backblazeb2.com/aminal-house-staging/review/video_dachshunds_hero_20260901_082319.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0053485a00580520000000002%2F20260901%2Fus-east-005%2Fs3%2Faws4_request&X-Amz-Date=20260901T123215Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a7674e7f064fb3e7c597b98a2142412fbd0624aec76c5274188227f26f9acd54",
-   "approve_url": "https://s3.us-east-005.backblazeb2.com/aminal-house-staging/verdicts/video_dachshunds_hero_20260901_082319.approve?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0053485a00580520000000002%2F20260901%2Fus-east-005%2Fs3%2Faws4_request&X-Amz-Date=20260901T123215Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=84a59532c945cc1c82dc10686f97e594d6495db0b4d84e0a282a26dcbc400a6a",
-   "reject_url": "https://s3.us-east-005.backblazeb2.com/aminal-house-staging/verdicts/video_dachshunds_hero_20260901_082319.reject?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0053485a00580520000000002%2F20260901%2Fus-east-005%2Fs3%2Faws4_request&X-Amz-Date=20260901T123215Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4673f27e94be3aab0dace5bbb1fc2c4b83fbe5995cf2ad61ac913cef1482eaa0",
-   "hold_url": "https://s3.us-east-005.backblazeb2.com/aminal-house-staging/verdicts/video_dachshunds_hero_20260901_082319.hold?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0053485a00580520000000002%2F20260901%2Fus-east-005%2Fs3%2Faws4_request&X-Amz-Date=20260901T123215Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0cc86a793987d71fd4973cc9d7805035a52bf38a0eeb7e50913681df06682244"
-  }
- ]
+ "generated": "2026-09-01T12:35:52+00:00",
+ "items": []
 }
