@@ -1,17 +1,4 @@
 {
- "generated": "2026-09-01T16:03:11+00:00",
- "items": [
-  {
-   "stem": "video_beagles_top5_20260901_113710",
-   "title": "Beagles",
-   "channel": "aminal",
-   "category": "beagles",
-   "queued_at": "2026-09-01T11:43:13",
-   "size_mb": 68.0,
-   "url": "https://s3.us-east-005.backblazeb2.com/aminal-house-staging/review/video_beagles_top5_20260901_113710.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0053485a00580520000000002%2F20260901%2Fus-east-005%2Fs3%2Faws4_request&X-Amz-Date=20260901T160205Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b3d48d9d28b79da39bec1fca49c26376426aaa716b5bca814d2887a382598442",
-   "approve_url": "https://s3.us-east-005.backblazeb2.com/aminal-house-staging/verdicts/video_beagles_top5_20260901_113710.approve?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0053485a00580520000000002%2F20260901%2Fus-east-005%2Fs3%2Faws4_request&X-Amz-Date=20260901T160205Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4c728758fbd48ec52edf03f267af099febddb14b1fa8a2412eea7e9234f67780",
-   "reject_url": "https://s3.us-east-005.backblazeb2.com/aminal-house-staging/verdicts/video_beagles_top5_20260901_113710.reject?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0053485a00580520000000002%2F20260901%2Fus-east-005%2Fs3%2Faws4_request&X-Amz-Date=20260901T160205Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6ee27eff6bab46976d62bda43e8619106ecf650a5e267e37f72be47bbd54eca1",
-   "hold_url": "https://s3.us-east-005.backblazeb2.com/aminal-house-staging/verdicts/video_beagles_top5_20260901_113710.hold?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0053485a00580520000000002%2F20260901%2Fus-east-005%2Fs3%2Faws4_request&X-Amz-Date=20260901T160205Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5e3d404f580d1dba7ba6f09c869b83b971532ebc99eda2d06fa8add82f7d354d"
-  }
- ]
+ "generated": "2026-09-01T16:05:50+00:00",
+ "items": []
 }
