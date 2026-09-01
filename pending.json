@@ -1,0 +1,14 @@
+{
+ "generated": "2026-09-01T12:13:43+00:00",
+ "items": [
+  {
+   "stem": "video_corgis_hero_REMOTETEST",
+   "title": "DO NOT APPROVE - remote pipeline test",
+   "channel": "aminal",
+   "category": "corgis",
+   "queued_at": "2026-09-01T08:20:00",
+   "size_mb": 6.9,
+   "url": "https://s3.us-east-005.backblazeb2.com/aminal-house-staging/review/video_corgis_hero_REMOTETEST.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0053485a00580520000000002%2F20260901%2Fus-east-005%2Fs3%2Faws4_request&X-Amz-Date=20260901T121343Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e7964b8b38e2435e233a0705173f2938e99d426f5878e635532c9c6c400fea72"
+  }
+ ]
+}
