@@ -157,18 +157,45 @@ function render(){
 
   var acts = $("actions");
   acts.innerHTML = "";
+  // Two ways to record a verdict. A presigned PUT is one tap and stays on the
+  // page. When storage is unavailable the item carries GitHub issue links
+  // instead: the phone is already signed in to GitHub, so no credential is
+  // needed here — it costs one extra tap on Submit and cannot break when a
+  // storage account hits a cap.
   [["approve","Post it","btn go"],
    ["hold","Later","btn later"],
    ["reject","Skip","btn no"]].forEach(function(spec){
-    var b = document.createElement("button");
-    b.className = spec[2]; b.textContent = spec[1];
-    b.disabled = !i[spec[0] + "_url"];
-    b.onclick = function(){ decide(i, spec[0]); };
-    acts.appendChild(b);
+    var direct = i[spec[0] + "_url"];
+    var issue  = i[spec[0] + "_issue"];
+    if(direct){
+      var b = document.createElement("button");
+      b.className = spec[2]; b.textContent = spec[1];
+      b.onclick = function(){ decide(i, spec[0]); };
+      acts.appendChild(b);
+    } else if(issue){
+      var a = document.createElement("a");
+      a.className = spec[2]; a.href = issue; a.target = "_blank"; a.rel = "noopener";
+      a.textContent = spec[1];
+      a.style.display = "flex"; a.style.alignItems = "center";
+      a.style.justifyContent = "center"; a.style.textDecoration = "none";
+      a.onclick = function(){
+        // Mark it locally so the queue advances; the PC confirms when it sees
+        // the issue. If the submit is abandoned it reappears on next refresh.
+        settled[i.stem] = spec[0]; save();
+        setTimeout(function(){ render(); toast("Submit the issue to confirm"); }, 400);
+      };
+      acts.appendChild(a);
+    } else {
+      var d = document.createElement("button");
+      d.className = spec[2]; d.textContent = spec[1]; d.disabled = true;
+      acts.appendChild(d);
+    }
   });
   $("hint").textContent = i.approve_url
     ? "keys: Y post · L later · N skip · → next"
-    : "approving unavailable right now — viewing only";
+    : (i.approve_issue
+        ? "opens GitHub — tap Submit to confirm, your PC does the rest"
+        : "approving unavailable right now — viewing only");
 }
 
 async function decide(item, verdict){
