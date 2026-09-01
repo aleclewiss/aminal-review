@@ -1,6 +1,18 @@
 {
- "generated": "2026-09-01T21:52:07+00:00",
+ "generated": "2026-09-01T21:53:45+00:00",
  "items": [
+  {
+   "stem": "video_bordercollies_top3_20260901_174453",
+   "title": "Bordercollies",
+   "channel": "aminal",
+   "category": "bordercollies",
+   "queued_at": "2026-09-01T17:52:28",
+   "size_mb": 30.9,
+   "url": "clips/video_bordercollies_top3_20260901_174453.mp4",
+   "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_bordercollies_top3_20260901_174453&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
+   "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_bordercollies_top3_20260901_174453&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
+   "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_bordercollies_top3_20260901_174453&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
+  },
   {
    "stem": "video_huskies_top3_20260901_174227",
    "title": "Huskies",
