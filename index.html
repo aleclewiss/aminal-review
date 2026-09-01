@@ -55,37 +55,17 @@
 <header>
   <h1>Aminal House</h1>
   <span class="count" id="count"></span>
-  <button class="gear" id="gear" title="Settings">&#9881;</button>
 </header>
 <main id="grid"></main>
 
-<dialog id="cfg">
-  <strong>GitHub token</strong>
-  <div class="hint">
-    A fine-grained personal access token with <code>Contents: read &amp; write</code>
-    on <b>aleclewiss/aminal-review</b> only — not the pipeline repo. Stored in this browser, sent only to
-    api.github.com — it never reaches the page itself.
-  </div>
-  <input id="tok" type="password" placeholder="github_pat_..." autocomplete="off">
-  <button id="save">Save</button>
-</dialog>
 
 <script>
-// The repo this page lives in — approvals are committed here as
-// approvals/<stem>.json, and the PC polls for them and publishes locally.
-// The phone never holds a YouTube/Instagram/TikTok credential.
-const OWNER = "aleclewiss";
-const REPO  = "aminal-review";
-const BRANCH = "main";
-
-const $ = function(id){ return document.getElementById(id); };
-const token = function(){ try { return localStorage.getItem("gh_token") || ""; } catch(e){ return ""; } };
-
-$("gear").onclick = function(){ $("tok").value = token(); $("cfg").showModal(); };
-$("save").onclick = function(){
-  try { localStorage.setItem("gh_token", $("tok").value.trim()); } catch(e){}
-  $("cfg").close(); load();
-};
+// No credential lives in this page. Each item carries presigned PUT URLs that
+// the pipeline machine generated; the signature in the URL is the only
+// permission, and it can write exactly one small object. The PC polls the
+// bucket for those objects and does the actual publishing, so no upload token
+// for YouTube, Instagram, TikTok or Facebook is ever exposed here.
+var $ = function(id){ return document.getElementById(id); };
 
 function esc(s){
   return String(s == null ? "" : s).replace(/[&<>"]/g, function(c){
@@ -98,17 +78,19 @@ function ago(iso){
   var t = Date.parse(iso);
   if(isNaN(t)) return "";
   var h = (Date.now() - t) / 3.6e6;
-  if(h < 1) return Math.max(1, Math.round(h*60)) + "m ago";
+  if(h < 1) return Math.max(1, Math.round(h * 60)) + "m ago";
   if(h < 24) return Math.round(h) + "h ago";
-  return Math.round(h/24) + "d ago";
+  return Math.round(h / 24) + "d ago";
 }
+
+var acted = {};   // stem -> "approve" | "reject", so a decided card stays decided
 
 async function load(){
   var grid = $("grid");
   var items = [];
   try {
-    // cache-bust: Pages caches aggressively and a stale queue is worse than none
-    var r = await fetch("pending.json?t=" + Date.now(), {cache:"no-store"});
+    // Pages caches hard; a stale queue is worse than an empty one.
+    var r = await fetch("pending.json?t=" + Date.now(), {cache: "no-store"});
     if(r.ok){ items = (await r.json()).items || []; }
   } catch(e){}
 
@@ -118,12 +100,6 @@ async function load(){
   if(!items.length){
     grid.innerHTML = "<div class=empty>Nothing waiting.<br>New videos appear here as the pipeline finishes them.</div>";
     return;
-  }
-  if(!token()){
-    var warn = document.createElement("div");
-    warn.className = "empty";
-    warn.innerHTML = "Add a GitHub token (&#9881; top right) to approve from this device.";
-    grid.appendChild(warn);
   }
 
   items.forEach(function(i){
@@ -138,14 +114,23 @@ async function load(){
       '<div class="row"></div>';
     var row = card.querySelector(".row");
 
-    var yes = document.createElement("button");
-    yes.className = "act yes"; yes.textContent = "Yes, post it";
-    var no = document.createElement("button");
-    no.className = "act nope"; no.textContent = "No";
-    yes.disabled = no.disabled = !token();
-    yes.onclick = function(){ decide(i, "approve", card, row); };
-    no.onclick  = function(){ decide(i, "reject",  card, row); };
-    row.appendChild(yes); row.appendChild(no);
+    if(acted[i.stem]){
+      var done = document.createElement("div");
+      done.className = "note";
+      done.textContent = acted[i.stem] === "approve"
+        ? "Approved - your PC will publish it within a minute."
+        : "Rejected.";
+      card.appendChild(done);
+      card.style.opacity = .55;
+    } else {
+      var yes = document.createElement("button");
+      yes.className = "act yes"; yes.textContent = "Yes, post it";
+      var no = document.createElement("button");
+      no.className = "act nope"; no.textContent = "No";
+      yes.onclick = function(){ decide(i, "approve", card, row); };
+      no.onclick  = function(){ decide(i, "reject",  card, row); };
+      row.appendChild(yes); row.appendChild(no);
+    }
     grid.appendChild(card);
   });
 }
@@ -157,38 +142,21 @@ async function decide(item, verdict, card, row){
   note.textContent = verdict === "approve" ? "Approving..." : "Rejecting...";
   card.appendChild(note);
 
-  var path = "approvals/" + item.stem + ".json";
-  var body = {
-    message: "review: " + verdict + " " + item.stem + " [skip ci]",
-    content: btoa(JSON.stringify({verdict: verdict, at: new Date().toISOString()}, null, 1)),
-    branch: BRANCH
-  };
+  var url = verdict === "approve" ? item.approve_url : item.reject_url;
+  if(!url){
+    note.textContent = "This item is missing its verdict link - reload the page.";
+    return;
+  }
   try{
-    // If a verdict file already exists we must pass its sha to overwrite it.
-    var head = await fetch("https://api.github.com/repos/" + OWNER + "/" + REPO +
-                           "/contents/" + path + "?ref=" + BRANCH,
-                           {headers:{Authorization:"Bearer " + token()}});
-    if(head.ok){ body.sha = (await head.json()).sha; }
-
-    var res = await fetch("https://api.github.com/repos/" + OWNER + "/" + REPO +
-                          "/contents/" + path, {
-      method:"PUT",
-      headers:{Authorization:"Bearer " + token(),
-               Accept:"application/vnd.github+json",
-               "Content-Type":"application/json"},
-      body: JSON.stringify(body)
-    });
-    if(!res.ok){
-      var msg = "";
-      try { msg = (await res.json()).message || ""; } catch(e){}
-      throw new Error(res.status + " " + msg);
-    }
+    var res = await fetch(url, {method: "PUT", body: verdict});
+    if(!res.ok){ throw new Error("HTTP " + res.status); }
+    acted[item.stem] = verdict;
     note.textContent = verdict === "approve"
-      ? "Approved — your PC will publish it within a minute."
+      ? "Approved - your PC will publish it within a minute."
       : "Rejected.";
     card.style.opacity = .55;
   } catch(e){
-    note.textContent = "Failed: " + e.message + " (check the token)";
+    note.textContent = "Failed: " + e.message + " - the link may have expired; reload.";
     row.querySelectorAll("button").forEach(function(b){ b.disabled = false; });
   }
 }
