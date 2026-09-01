@@ -1,4 +1,17 @@
 {
- "generated": "2026-09-01T20:24:16+00:00",
- "items": []
+ "generated": "2026-09-01T20:56:11+00:00",
+ "items": [
+  {
+   "stem": "video_poms_top3_20260901_164623",
+   "title": "Poms",
+   "channel": "aminal",
+   "category": "poms",
+   "queued_at": "2026-09-01T16:55:05",
+   "size_mb": 35.5,
+   "url": "clips/video_poms_top3_20260901_164623.mp4",
+   "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_poms_top3_20260901_164623&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
+   "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_poms_top3_20260901_164623&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
+   "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_poms_top3_20260901_164623&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
+  }
+ ]
 }
