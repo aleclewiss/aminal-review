@@ -149,7 +149,7 @@ function ago(iso){
 var VERDICT_TEXT = {
   approve: "Posting now — your PC picks this up within a minute.",
   reject:  "Skipped. It won’t be posted.",
-  hold:    "Held. It waits here until you decide."
+  hold:    "Held. It stays in the queue."
 };
 
 async function load(){
@@ -164,7 +164,7 @@ async function load(){
   var live = items.filter(function(i){ return !settled[i.stem]; });
   document.getElementById("total").textContent = live.length ? live.length + " waiting" : "all clear";
   document.getElementById("foot").textContent =
-    "Undecided videos post automatically after 12 hours. “Later” holds one back instead.";
+    "Nothing posts unless you approve it. Videos wait here indefinitely.";
 
   if(!items.length){
     main.innerHTML = '<div class="empty"><strong>Nothing waiting</strong>' +
