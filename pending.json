@@ -1,66 +1,6 @@
 {
- "generated": "2026-09-02T08:31:09+00:00",
+ "generated": "2026-09-02T12:04:41+00:00",
  "items": [
-  {
-   "stem": "video_bordercollies_top3_20260901_174453",
-   "title": "Bordercollies",
-   "channel": "aminal",
-   "category": "bordercollies",
-   "queued_at": "2026-09-01T17:52:28",
-   "size_mb": 30.9,
-   "url": "clips/video_bordercollies_top3_20260901_174453.mp4",
-   "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_bordercollies_top3_20260901_174453&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
-   "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_bordercollies_top3_20260901_174453&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
-   "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_bordercollies_top3_20260901_174453&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
-  },
-  {
-   "stem": "video_goldens_top3_20260901_180149",
-   "title": "Goldens",
-   "channel": "aminal",
-   "category": "goldens",
-   "queued_at": "2026-09-01T18:07:40",
-   "size_mb": 26.6,
-   "url": "clips/video_goldens_top3_20260901_180149.mp4",
-   "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_goldens_top3_20260901_180149&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
-   "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_goldens_top3_20260901_180149&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
-   "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_goldens_top3_20260901_180149&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
-  },
-  {
-   "stem": "video_huskies_top3_20260901_174227",
-   "title": "Huskies",
-   "channel": "aminal",
-   "category": "huskies",
-   "queued_at": "2026-09-01T17:51:20",
-   "size_mb": 40.1,
-   "url": "clips/video_huskies_top3_20260901_174227.mp4",
-   "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_huskies_top3_20260901_174227&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
-   "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_huskies_top3_20260901_174227&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
-   "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_huskies_top3_20260901_174227&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
-  },
-  {
-   "stem": "video_poms_top3_20260901_164623",
-   "title": "Poms",
-   "channel": "aminal",
-   "category": "poms",
-   "queued_at": "2026-09-01T16:55:05",
-   "size_mb": 35.5,
-   "url": "clips/video_poms_top3_20260901_164623.mp4",
-   "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_poms_top3_20260901_164623&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
-   "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_poms_top3_20260901_164623&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
-   "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_poms_top3_20260901_164623&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
-  },
-  {
-   "stem": "video_pugs_top3_20260902_042327",
-   "title": "Pugs",
-   "channel": "aminal",
-   "category": "pugs",
-   "queued_at": "2026-09-02T04:29:55",
-   "size_mb": 28.8,
-   "url": "clips/video_pugs_top3_20260902_042327.mp4",
-   "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_pugs_top3_20260902_042327&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
-   "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_pugs_top3_20260902_042327&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
-   "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_pugs_top3_20260902_042327&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
-  },
   {
    "stem": "video_samoyeds_top3_20260901_174125",
    "title": "Samoyeds",
