@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-01T22:16:19+00:00",
+ "generated": "2026-09-02T04:51:37+00:00",
  "items": [
   {
    "stem": "video_bordercollies_top3_20260901_174453",
@@ -72,6 +72,18 @@
    "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_shibas_top3_20260901_180855&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
    "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_shibas_top3_20260901_180855&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
    "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_shibas_top3_20260901_180855&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
+  },
+  {
+   "stem": "video_yorkies_top3_20260902_004046",
+   "title": "Yorkies",
+   "channel": "aminal",
+   "category": "yorkies",
+   "queued_at": "2026-09-02T00:48:41",
+   "size_mb": 34.1,
+   "url": "clips/video_yorkies_top3_20260902_004046.mp4",
+   "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_yorkies_top3_20260902_004046&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
+   "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_yorkies_top3_20260902_004046&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
+   "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_yorkies_top3_20260902_004046&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
   }
  ]
 }
