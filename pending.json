@@ -1,4 +1,17 @@
 {
- "generated": "2026-09-03T15:59:58+00:00",
- "items": []
+ "generated": "2026-09-03T16:11:24+00:00",
+ "items": [
+  {
+   "stem": "video_wildlife_top3_20260903_120151",
+   "title": "Nature did not ask for our opinion",
+   "channel": "aminal",
+   "category": "wildlife",
+   "queued_at": "2026-09-03T12:10:27",
+   "size_mb": 23.7,
+   "url": "clips/video_wildlife_top3_20260903_120151.mp4",
+   "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_wildlife_top3_20260903_120151&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
+   "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_wildlife_top3_20260903_120151&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
+   "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_wildlife_top3_20260903_120151&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
+  }
+ ]
 }
