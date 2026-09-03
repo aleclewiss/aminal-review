@@ -1,18 +1,6 @@
 {
- "generated": "2026-09-03T15:49:31+00:00",
+ "generated": "2026-09-03T15:50:53+00:00",
  "items": [
-  {
-   "stem": "video_animals_top3_20260903_113804",
-   "title": "Animals",
-   "channel": "aminal",
-   "category": "animals",
-   "queued_at": "2026-09-03T11:45:40",
-   "size_mb": 26.8,
-   "url": "clips/video_animals_top3_20260903_113804.mp4",
-   "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_animals_top3_20260903_113804&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
-   "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_animals_top3_20260903_113804&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
-   "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_animals_top3_20260903_113804&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
-  },
   {
    "stem": "video_cats_top3_20260903_114047",
    "title": "Cats have no regrets",
