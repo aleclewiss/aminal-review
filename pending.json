@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-03T17:19:02+00:00",
+ "generated": "2026-09-03T17:27:33+00:00",
  "items": [
   {
    "stem": "video_ducks_top3_20260903_130909",
@@ -12,6 +12,18 @@
    "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_ducks_top3_20260903_130909&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
    "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_ducks_top3_20260903_130909&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
    "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_ducks_top3_20260903_130909&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
+  },
+  {
+   "stem": "video_ocean_top3_20260903_131923",
+   "title": "The ocean refuses to be boring",
+   "channel": "aminal",
+   "category": "ocean",
+   "queued_at": "2026-09-03T13:26:59",
+   "size_mb": 35.4,
+   "url": "clips/video_ocean_top3_20260903_131923.mp4",
+   "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_ocean_top3_20260903_131923&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
+   "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_ocean_top3_20260903_131923&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
+   "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_ocean_top3_20260903_131923&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
   }
  ]
 }
