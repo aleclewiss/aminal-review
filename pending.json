@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-03T18:08:01+00:00",
+ "generated": "2026-09-03T21:22:07+00:00",
  "items": [
   {
    "stem": "video_cats_top3_20260903_135844",
@@ -14,30 +14,6 @@
    "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_cats_top3_20260903_135844&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
   },
   {
-   "stem": "video_ducks_top3_20260903_130909",
-   "title": "Ducks",
-   "channel": "aminal",
-   "category": "ducks",
-   "queued_at": "2026-09-03T13:18:33",
-   "size_mb": 35.0,
-   "url": "clips/video_ducks_top3_20260903_130909.mp4",
-   "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_ducks_top3_20260903_130909&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
-   "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_ducks_top3_20260903_130909&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
-   "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_ducks_top3_20260903_130909&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
-  },
-  {
-   "stem": "video_house pets_top3_20260903_132100",
-   "title": "House Pets",
-   "channel": "aminal",
-   "category": "house pets",
-   "queued_at": "2026-09-03T13:27:11",
-   "size_mb": 35.6,
-   "url": "clips/video_house pets_top3_20260903_132100.mp4",
-   "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_house%20pets_top3_20260903_132100&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
-   "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_house%20pets_top3_20260903_132100&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
-   "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_house%20pets_top3_20260903_132100&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
-  },
-  {
    "stem": "video_ocean_top3_20260903_131923",
    "title": "The ocean refuses to be boring",
    "channel": "aminal",
@@ -48,18 +24,6 @@
    "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_ocean_top3_20260903_131923&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
    "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_ocean_top3_20260903_131923&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
    "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_ocean_top3_20260903_131923&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
-  },
-  {
-   "stem": "video_raccoons_top3_20260903_132335",
-   "title": "Raccoons",
-   "channel": "aminal",
-   "category": "raccoons",
-   "queued_at": "2026-09-03T13:30:18",
-   "size_mb": 37.0,
-   "url": "clips/video_raccoons_top3_20260903_132335.mp4",
-   "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_raccoons_top3_20260903_132335&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
-   "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_raccoons_top3_20260903_132335&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
-   "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_raccoons_top3_20260903_132335&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
   },
   {
    "stem": "video_wildlife_top3_20260903_134915",
