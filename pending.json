@@ -1,29 +1,4 @@
 {
- "generated": "2026-09-03T15:50:53+00:00",
- "items": [
-  {
-   "stem": "video_cats_top3_20260903_114047",
-   "title": "Cats have no regrets",
-   "channel": "aminal",
-   "category": "cats",
-   "queued_at": "2026-09-03T11:48:36",
-   "size_mb": 31.7,
-   "url": "clips/video_cats_top3_20260903_114047.mp4",
-   "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_cats_top3_20260903_114047&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
-   "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_cats_top3_20260903_114047&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
-   "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_cats_top3_20260903_114047&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
-  },
-  {
-   "stem": "video_dogs_top3_20260903_114012",
-   "title": "Dogs being dogs",
-   "channel": "aminal",
-   "category": "dogs",
-   "queued_at": "2026-09-03T11:47:56",
-   "size_mb": 53.8,
-   "url": "clips/video_dogs_top3_20260903_114012.mp4",
-   "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_dogs_top3_20260903_114012&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
-   "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_dogs_top3_20260903_114012&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
-   "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_dogs_top3_20260903_114012&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
-  }
- ]
+ "generated": "2026-09-03T15:59:58+00:00",
+ "items": []
 }
