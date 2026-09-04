@@ -1,235 +1,217 @@
 <!doctype html>
-<html lang="en">
-<head>
+<html lang="en"><head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#131019">
-<title>Aminal House Review</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Outfit:wght@300;400;500;600&display=swap">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>aminal.house — review</title>
 <style>
-  /* Aminal House palette: the channel's own hot pink on a near-black biased
-     slightly violet toward it, rather than a neutral grey. */
-  :root{
-    --ink:#131019; --surface:#1c1824; --raised:#241f2e; --line:#332b3f;
-    --fg:#f6f2f8; --dim:#a096ad; --faint:#6f6679;
-    --accent:#ff3d8a; --go:#3ddc84; --stop:#ff5f56; --hold:#ffc25c;
-  }
-  *{box-sizing:border-box}
-  html,body{height:100%}
-  body{
-    margin:0; background:var(--ink); color:var(--fg);
-    font:400 16px/1.5 Outfit,system-ui,-apple-system,Segoe UI,sans-serif;
-    -webkit-font-smoothing:antialiased; overflow:hidden;
-  }
+  :root { --cream:#F2E7D1; --brown:#221912; --ok:#2f9e5e; --no:#b3453c; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--brown); color:var(--cream);
+         font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif; }
+  header { padding:18px 16px 10px; position:sticky; top:0; background:var(--brown);
+           border-bottom:1px solid rgba(242,231,209,.16); z-index:2; }
+  h1 { margin:0; font-size:17px; letter-spacing:.02em; }
+  .count { opacity:.7; font-size:13px; margin-top:3px; }
+  .grid { display:grid; gap:18px; padding:16px;
+          grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); }
+  .card { background:rgba(242,231,209,.05); border:1px solid rgba(242,231,209,.14);
+          border-radius:14px; overflow:hidden; }
+  video { width:100%; display:block; background:#000; aspect-ratio:9/16; }
+  .meta { padding:11px 13px 13px; }
+  .who { font-weight:700; }
+  .plat { font-weight:400; opacity:.55; font-size:12px; text-transform:uppercase;
+          margin-left:5px; }
+  .t { margin-top:3px; opacity:.92; }
+  .sub { margin-top:3px; opacity:.6; font-size:13px; }
+  .cap { width:100%; margin-top:10px; padding:9px 10px; border-radius:9px;
+         background:rgba(0,0,0,.30); color:var(--cream);
+         border:1px solid rgba(242,231,209,.22); font:14px/1.4 inherit;
+         resize:vertical; }
+  .chips { display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; }
+  .chip { background:rgba(242,231,209,.10); color:var(--cream); cursor:pointer;
+          border:1px solid rgba(242,231,209,.22); border-radius:999px;
+          padding:5px 10px; font:12px inherit; }
+  .chip:active { background:rgba(242,231,209,.22); }
+  .btns { display:flex; gap:9px; margin-top:11px; }
+  .btns button { flex:1; padding:11px 0; border:0; border-radius:9px;
+                 font:700 15px inherit; color:#fff; cursor:pointer; }
+  .ok { background:var(--ok); }
+  .no { background:var(--no); }
+  .hold { background:transparent; color:var(--cream);
+          border:1px solid rgba(242,231,209,.35) !important; flex:0 0 78px !important; }
+  .more { display:flex; gap:8px; margin-top:11px; }
+  .get { flex:1; padding:11px 0; border-radius:9px; cursor:pointer;
+         background:var(--cream); color:var(--brown); border:0;
+         font:700 15px inherit; }
+  .get.alt { flex:0 0 74px; background:transparent; color:var(--cream);
+             border:1px solid rgba(242,231,209,.35); }
+  .get.wipe { background:transparent; color:#e5867d;
+              border:1px solid rgba(229,134,125,.55); font-weight:600; }
+  footer { padding:22px 16px 40px; opacity:.55; font-size:12px; }
+  .empty { padding:40px 16px; opacity:.7; }
+  .done { opacity:.35; }
+  #toast { position:fixed; left:50%; bottom:22px; transform:translateX(-50%);
+           background:var(--cream); color:var(--brown); padding:9px 16px;
+           border-radius:999px; font-weight:700; opacity:0; transition:opacity .2s;
+           pointer-events:none; z-index:9; }
+  #toast.on { opacity:1; }
+</style></head><body>
 
-  /* Single-card review. With dozens queued a grid means scrolling and losing
-     your place; one video at a time with three big targets is a decision you
-     can make in a second and repeat. */
-  .wrap{height:100%; display:flex; flex-direction:column;
-        max-width:560px; margin:0 auto; padding:0 14px}
+<header>
+  <h1>aminal.house &mdash; review</h1>
+  <div class="count" id="count">loading…</div>
+  <div class="more">
+    <button class="get" onclick="getMore(10)">Get 10 more videos</button>
+    <button class="get alt" onclick="getMore(30)">30</button>
+  </div>
+  <div class="more">
+    <button class="get wipe" onclick="clearQueue(30)">Clear queue &amp; get 30 fresh</button>
+  </div>
+</header>
 
-  header{display:flex; align-items:center; gap:10px;
-         padding:calc(12px + env(safe-area-inset-top)) 4px 10px}
-  .brand{font-family:Syne,sans-serif; font-weight:800; font-size:17px;
-         letter-spacing:-.01em; margin:0}
-  .brand em{font-style:normal; color:var(--accent)}
-  .progress{margin-left:auto; font-size:13px; color:var(--dim);
-            font-variant-numeric:tabular-nums}
+<div id="grid" class="empty">loading…</div>
+<div id="toast"></div>
 
-  .bar{height:3px; background:var(--raised); border-radius:2px; overflow:hidden;
-       margin-bottom:10px}
-  .bar div{height:100%; background:var(--accent); width:0; transition:width .3s ease}
-
-  .stage{flex:1; min-height:0; display:flex; flex-direction:column;
-         background:var(--surface); border:1px solid var(--line);
-         border-radius:16px; overflow:hidden}
-  video{flex:1; min-height:0; width:100%; background:#000; object-fit:contain}
-  .meta{padding:11px 14px 9px; border-top:1px solid var(--line)}
-  .title{font-weight:600; line-height:1.3; font-size:15px}
-  .sub{margin-top:5px; color:var(--dim); font-size:12.5px;
-       display:flex; gap:6px; align-items:center; flex-wrap:wrap}
-  .pill{background:var(--raised); border:1px solid var(--line); color:#cdc5d6;
-        border-radius:999px; padding:1px 9px; font-size:11.5px; font-weight:500}
-  .pill.ch{color:var(--accent); border-color:rgba(255,61,138,.3)}
-
-  .actions{display:flex; gap:9px; padding:10px 4px calc(16px + env(safe-area-inset-bottom))}
-  .btn{flex:1; padding:15px 8px; border:1px solid transparent; border-radius:13px;
-       font:700 15px Outfit,sans-serif; cursor:pointer; color:#120d16;
-       -webkit-tap-highlight-color:transparent; transition:filter .12s ease}
-  .btn:active{filter:brightness(.9)}
-  .btn:disabled{opacity:.4}
-  .btn:focus-visible{outline:2px solid var(--fg); outline-offset:2px}
-  .go{background:var(--go); flex:1.5}
-  .no{background:transparent; color:var(--stop); border-color:rgba(255,95,86,.45)}
-  .later{background:transparent; color:var(--hold); border-color:rgba(255,194,92,.4)}
-
-  .hint{text-align:center; color:var(--faint); font-size:11.5px; padding-bottom:6px}
-  .toast{position:fixed; left:50%; bottom:96px; transform:translateX(-50%);
-         background:var(--raised); border:1px solid var(--line); color:var(--fg);
-         padding:9px 16px; border-radius:999px; font-size:13px; font-weight:500;
-         opacity:0; pointer-events:none; transition:opacity .2s ease; z-index:30}
-  .toast.on{opacity:1}
-
-  .done{flex:1; display:flex; flex-direction:column; align-items:center;
-        justify-content:center; text-align:center; color:var(--dim);
-        font-weight:300; gap:6px; padding:30px}
-  .done strong{font-family:Syne,sans-serif; font-weight:700; color:var(--fg);
-               font-size:19px}
-  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
-</style>
-</head>
-<body>
-<div class="wrap">
-  <header>
-    <h1 class="brand">Aminal <em>House</em></h1>
-    <span class="progress" id="progress"></span>
-  </header>
-  <div class="bar"><div id="barfill"></div></div>
-  <div class="stage" id="stage"></div>
-  <div class="actions" id="actions"></div>
-  <div class="hint" id="hint"></div>
-</div>
-<div class="toast" id="toast"></div>
+<footer>
+  Approve or Skip records a verdict straight to storage where one is available,
+  otherwise it opens a prefilled GitHub issue. This PC acts on it within a
+  minute. Nothing publishes without a decision.
+</footer>
 
 <script>
-// No credential here. Each item carries presigned PUT URLs minted by the
-// pipeline machine; the signature IS the permission and it writes one small
-// object. That PC polls for them and publishes, so no YouTube / Instagram /
-// TikTok token is ever present in this page.
-var items = [], idx = 0, settled = {};
-try { settled = JSON.parse(localStorage.getItem("settled") || "{}"); } catch(e){}
+// The review repo, used only for the bulk actions. Per-video verdicts go
+// straight to storage via the presigned URLs in the manifest, which needs no
+// GitHub round trip; "clear" and "batch" have no per-video URL to ride on, so
+// they travel as issues the way Clipped House does it.
+var REPO = "aleclewiss/aminal-review";
+var BASE_TAGS = ["animals", "dogs", "puppies", "cute", "fyp", "shorts", "animalshorts"];
+var items = [], settled = {};
 
-function save(){ try { localStorage.setItem("settled", JSON.stringify(settled)); } catch(e){} }
-function $(id){ return document.getElementById(id); }
-function esc(s){
-  return String(s == null ? "" : s).replace(/[&<>"]/g, function(c){
-    return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c];
+function esc(s) {
+  return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+    return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];
   });
 }
-function toast(msg){
-  var t = $("toast"); t.textContent = msg; t.classList.add("on");
-  clearTimeout(t._h); t._h = setTimeout(function(){ t.classList.remove("on"); }, 1600);
+
+function toast(msg) {
+  var t = document.getElementById("toast");
+  t.textContent = msg; t.className = "on";
+  setTimeout(function () { t.className = ""; }, 1600);
 }
 
-function pending(){ return items.filter(function(i){ return !settled[i.stem]; }); }
-
-async function load(){
-  try{
-    var r = await fetch("pending.json?t=" + Date.now(), {cache:"no-store"});
-    if(r.ok){ items = (await r.json()).items || []; }
-  }catch(e){}
-  if(idx >= pending().length) idx = 0;
-  render();
+function tagsFor(it) {
+  // The category is the most specific thing known about an animal video, and
+  // it is exactly what someone would search. It leads.
+  var own = [];
+  if (it.category) own.push(String(it.category).replace(/[^a-z0-9]/gi, "").toLowerCase());
+  return own.concat(BASE_TAGS).filter(function (t, i, a) { return t && a.indexOf(t) === i; });
 }
 
-function render(){
-  var list = pending();
-  var total = items.length;
-  $("progress").textContent = list.length ? (total - list.length + 1) + " / " + total : "";
-  $("barfill").style.width = total ? ((total - list.length) / total * 100) + "%" : "0";
+function addTag(stem, tag) {
+  var ta = document.getElementById("c_" + stem);
+  var t = "#" + tag;
+  if (ta.value.indexOf(t) >= 0) return;      // one tap adds, not duplicates
+  ta.value = (ta.value.replace(/\s+$/, "") + " " + t).trim();
+}
 
-  if(!list.length){
-    $("stage").innerHTML = '<div class="done"><strong>All caught up</strong>' +
-      '<span>New videos appear here as they finish rendering.</span></div>';
-    $("actions").innerHTML = "";
-    $("hint").textContent = "";
+function card(it) {
+  var tags = tagsFor(it);
+  var chips = tags.map(function (t) {
+    return '<button class="chip" onclick="addTag(\'' + esc(it.stem) + "','" + esc(t) + '\')">#' + esc(t) + "</button>";
+  }).join("");
+  var title = (it.title || "").trim();
+  var caption = (title.length > 5 ? title + "\n\n" : "") +
+                tags.slice(0, 7).map(function (t) { return "#" + t; }).join(" ");
+  return '<section class="card" id="card_' + esc(it.stem) + '">' +
+    '<video src="' + esc(it.url) + '" controls preload="none" playsinline></video>' +
+    '<div class="meta">' +
+      '<div class="who">' + esc(it.channel || "aminal.house") +
+        '<span class="plat">' + esc(it.category || "") + "</span></div>" +
+      (title ? '<div class="t">' + esc(title) + "</div>" : "") +
+      '<div class="sub">' + esc(it.size_mb || "?") + " MB &middot; " +
+        esc((it.queued_at || "").slice(0, 16).replace("T", " ")) + "</div>" +
+      '<textarea id="c_' + esc(it.stem) + '" class="cap" rows="4" ' +
+        'placeholder="Caption for TikTok / YouTube...">' + esc(caption) + "</textarea>" +
+      '<div class="chips">' + chips + "</div>" +
+      '<div class="btns">' +
+        '<button class="ok" onclick="send(\'' + esc(it.stem) + '\',\'approve\')">Approve</button>' +
+        '<button class="no" onclick="send(\'' + esc(it.stem) + '\',\'reject\')">Reject</button>' +
+        '<button class="no hold" onclick="send(\'' + esc(it.stem) + '\',\'hold\')">Hold</button>' +
+      "</div>" +
+    "</div></section>";
+}
+
+function render() {
+  var live = items.filter(function (i) { return !settled[i.stem]; });
+  document.getElementById("count").textContent =
+    live.length + " waiting · updated " + new Date().toLocaleString();
+  var g = document.getElementById("grid");
+  if (!live.length) {
+    g.className = "empty";
+    g.textContent = "Nothing waiting. Use the buttons above to render more.";
     return;
   }
-
-  var i = list[Math.min(idx, list.length - 1)];
-  $("stage").innerHTML =
-    '<video id="player" src="' + esc(i.url) + '" controls autoplay muted playsinline ' +
-    'preload="metadata"></video>' +
-    '<div class="meta"><div class="title">' + esc(i.title || "(untitled)") + '</div>' +
-    '<div class="sub"><span class="pill ch">' + esc(i.channel) + '</span>' +
-    '<span class="pill">' + esc(i.category) + '</span>' +
-    esc(i.size_mb) + ' MB &middot; ' + list.length + ' left</div></div>';
-
-  // Autoplay has to start muted or mobile blocks it; unmute on first tap so
-  // the clip audio — the thing being judged — is actually audible.
-  var v = $("player");
-  if(v){
-    v.addEventListener("click", function(){ v.muted = false; }, {once:true});
-    v.addEventListener("loadeddata", function(){ v.muted = false; }, {once:true});
-  }
-
-  var acts = $("actions");
-  acts.innerHTML = "";
-  // Two ways to record a verdict. A presigned PUT is one tap and stays on the
-  // page. When storage is unavailable the item carries GitHub issue links
-  // instead: the phone is already signed in to GitHub, so no credential is
-  // needed here — it costs one extra tap on Submit and cannot break when a
-  // storage account hits a cap.
-  [["approve","Post it","btn go"],
-   ["hold","Later","btn later"],
-   ["reject","Skip","btn no"]].forEach(function(spec){
-    var direct = i[spec[0] + "_url"];
-    var issue  = i[spec[0] + "_issue"];
-    if(direct){
-      var b = document.createElement("button");
-      b.className = spec[2]; b.textContent = spec[1];
-      b.onclick = function(){ decide(i, spec[0]); };
-      acts.appendChild(b);
-    } else if(issue){
-      var a = document.createElement("a");
-      a.className = spec[2]; a.href = issue; a.target = "_blank"; a.rel = "noopener";
-      a.textContent = spec[1];
-      a.style.display = "flex"; a.style.alignItems = "center";
-      a.style.justifyContent = "center"; a.style.textDecoration = "none";
-      a.onclick = function(){
-        // Mark it locally so the queue advances; the PC confirms when it sees
-        // the issue. If the submit is abandoned it reappears on next refresh.
-        settled[i.stem] = spec[0]; save();
-        setTimeout(function(){ render(); toast("Submit the issue to confirm"); }, 400);
-      };
-      acts.appendChild(a);
-    } else {
-      var d = document.createElement("button");
-      d.className = spec[2]; d.textContent = spec[1]; d.disabled = true;
-      acts.appendChild(d);
-    }
-  });
-  $("hint").textContent = i.approve_url
-    ? "keys: Y post · L later · N skip · → next"
-    : (i.approve_issue
-        ? "opens GitHub — tap Submit to confirm, your PC does the rest"
-        : "approving unavailable right now — viewing only");
+  g.className = "grid";
+  g.innerHTML = live.map(card).join("");
 }
 
-async function decide(item, verdict){
-  var url = item[verdict + "_url"];
-  if(!url){ toast("Not available right now"); return; }
-  // Advance immediately: waiting on the network before showing the next video
-  // makes reviewing a queue of forty feel like work.
-  settled[item.stem] = verdict; save();
-  toast(verdict === "approve" ? "Posting…" : verdict === "hold" ? "Held" : "Skipped");
+async function load() {
+  try {
+    var r = await fetch("pending.json?t=" + Date.now(), { cache: "no-store" });
+    if (r.ok) items = ((await r.json()).items) || [];
+  } catch (e) { /* offline: keep whatever is on screen */ }
   render();
-  try{
-    var res = await fetch(url, {method:"PUT", body: verdict});
-    if(!res.ok) throw new Error("HTTP " + res.status);
-  }catch(e){
-    delete settled[item.stem]; save();      // put it back rather than lose it
-    toast("Couldn't save — try again");
-    render();
+}
+
+async function send(stem, verdict) {
+  var it = items.filter(function (i) { return i.stem === stem; })[0];
+  if (!it) return;
+  var ta = document.getElementById("c_" + stem);
+  var caption = ta ? ta.value : "";
+  var url = it[verdict + "_url"];             // presigned PUT, when present
+  var card = document.getElementById("card_" + stem);
+  if (card) card.className = "card done";
+  settled[stem] = true;
+  if (url) {
+    try {
+      // The caption rides in the body so an approved video carries the words
+      // that were typed next to it, exactly as Clipped House does.
+      await fetch(url, { method: "PUT", body: verdict === "approve" ? caption : verdict });
+      toast(verdict === "approve" ? "Approved" : verdict === "hold" ? "Held" : "Skipped");
+      return;
+    } catch (e) { /* fall through to the issue path */ }
+  }
+  var issue = it[verdict + "_issue"];
+  if (issue) {
+    window.open(issue, "_blank", "noopener");
+    toast("Opening issue…");
+  } else {
+    toast("No verdict route available");
+    settled[stem] = false;
+    if (card) card.className = "card";
   }
 }
 
-document.addEventListener("keydown", function(e){
-  var list = pending();
-  if(!list.length) return;
-  var i = list[Math.min(idx, list.length - 1)];
-  var k = e.key.toLowerCase();
-  if(k === "y") decide(i, "approve");
-  else if(k === "l") decide(i, "hold");
-  else if(k === "n") decide(i, "reject");
-  else if(e.key === "ArrowRight"){ idx = (idx + 1) % list.length; render(); }
-  else if(e.key === "ArrowLeft"){ idx = (idx - 1 + list.length) % list.length; render(); }
-});
+function getMore(n) {
+  var url = "https://github.com/" + REPO + "/issues/new" +
+    "?title=" + encodeURIComponent("batch: " + n) +
+    "&body=" + encodeURIComponent("Submit to render " + n + " more videos.");
+  window.open(url, "_blank", "noopener");
+}
+
+function clearQueue(n) {
+  var total = items.filter(function (i) { return !settled[i.stem]; }).length;
+  var msg = "Reject all " + total + " videos waiting, and render " + n +
+            " fresh ones? Rejected videos never come back.";
+  if (!confirm(msg)) return;
+  var url = "https://github.com/" + REPO + "/issues/new" +
+    "?title=" + encodeURIComponent("clear: " + n) +
+    "&body=" + encodeURIComponent("Submit to reject all pending videos and render " +
+                                  n + " fresh ones.");
+  window.open(url, "_blank", "noopener");
+}
 
 load();
-setInterval(load, 30000);
+setInterval(load, 60000);      // the PC republishes the manifest as it works
 </script>
-</body>
-</html>
+</body></html>
