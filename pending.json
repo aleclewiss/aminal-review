@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-09T02:37:12+00:00",
+ "generated": "2026-09-09T22:10:50+00:00",
  "items": [
   {
    "stem": "video_ducks_top3_20260907_133605",
@@ -12,6 +12,18 @@
    "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_ducks_top3_20260907_133605&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
    "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_ducks_top3_20260907_133605&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
    "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_ducks_top3_20260907_133605&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
+  },
+  {
+   "stem": "video_huskies_top3_20260909_180146",
+   "title": "Huskies",
+   "channel": "aminal",
+   "category": "huskies",
+   "queued_at": "2026-09-09T18:09:59",
+   "size_mb": 28.8,
+   "url": "clips/video_huskies_top3_20260909_180146.mp4",
+   "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_huskies_top3_20260909_180146&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
+   "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_huskies_top3_20260909_180146&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
+   "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_huskies_top3_20260909_180146&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
   },
   {
    "stem": "video_shibas_top3_20260908_222944",
