@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-10T13:50:17+00:00",
+ "generated": "2026-09-11T07:16:41+00:00",
  "items": [
   {
    "stem": "video_corgis_top3_20260910_093959",
@@ -12,6 +12,18 @@
    "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_corgis_top3_20260910_093959&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
    "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_corgis_top3_20260910_093959&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
    "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_corgis_top3_20260910_093959&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
+  },
+  {
+   "stem": "video_dachshunds_top3_20260911_030603",
+   "title": "Dachshunds are built different",
+   "channel": "aminal",
+   "category": "dachshunds",
+   "queued_at": "2026-09-11T03:14:49",
+   "size_mb": 30.4,
+   "url": "clips/video_dachshunds_top3_20260911_030603.mp4",
+   "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_dachshunds_top3_20260911_030603&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
+   "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_dachshunds_top3_20260911_030603&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
+   "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_dachshunds_top3_20260911_030603&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
   },
   {
    "stem": "video_ducks_top3_20260907_133605",
