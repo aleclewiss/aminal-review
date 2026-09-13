@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-12T23:51:53+00:00",
+ "generated": "2026-09-13T07:18:18+00:00",
  "items": [
   {
    "stem": "video_cats_top3_20260912_194248",
@@ -60,6 +60,18 @@
    "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_germanshepherds_top3_20260912_045418&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
    "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_germanshepherds_top3_20260912_045418&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
    "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_germanshepherds_top3_20260912_045418&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
+  },
+  {
+   "stem": "video_germanshepherds_top3_20260913_030853",
+   "title": "Germanshepherds",
+   "channel": "aminal",
+   "category": "germanshepherds",
+   "queued_at": "2026-09-13T03:16:48",
+   "size_mb": 38.6,
+   "url": "clips/video_germanshepherds_top3_20260913_030853.mp4",
+   "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_germanshepherds_top3_20260913_030853&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
+   "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_germanshepherds_top3_20260913_030853&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
+   "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_germanshepherds_top3_20260913_030853&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
   },
   {
    "stem": "video_huskies_top3_20260909_180146",
