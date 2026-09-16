@@ -1,18 +1,6 @@
 {
- "generated": "2026-09-16T01:45:27+00:00",
+ "generated": "2026-09-16T02:31:11+00:00",
  "items": [
-  {
-   "stem": "video_ducks_top3_20260907_133605",
-   "title": "Ducks",
-   "channel": "aminal",
-   "category": "ducks",
-   "queued_at": "2026-09-07T13:42:34",
-   "size_mb": 31.3,
-   "url": "clips/video_ducks_top3_20260907_133605.mp4",
-   "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_ducks_top3_20260907_133605&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
-   "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_ducks_top3_20260907_133605&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
-   "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_ducks_top3_20260907_133605&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
-  },
   {
    "stem": "video_germanshepherds_top3_20260912_045418",
    "title": "Germanshepherds",
