@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-16T13:16:19+00:00",
+ "generated": "2026-09-16T13:19:00+00:00",
  "items": [
   {
    "stem": "video_goldens_top3_20260916_090315",
@@ -12,6 +12,18 @@
    "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_goldens_top3_20260916_090315&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
    "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_goldens_top3_20260916_090315&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
    "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_goldens_top3_20260916_090315&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
+  },
+  {
+   "stem": "video_pugs_top3_20260916_090213",
+   "title": "The pug timeline is undefeated",
+   "channel": "aminal",
+   "category": "pugs",
+   "queued_at": "2026-09-16T09:18:41",
+   "size_mb": 38.0,
+   "url": "clips/video_pugs_top3_20260916_090213.mp4",
+   "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_pugs_top3_20260916_090213&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
+   "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_pugs_top3_20260916_090213&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
+   "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_pugs_top3_20260916_090213&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
   }
  ]
 }
