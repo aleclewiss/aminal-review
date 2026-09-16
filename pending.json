@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-16T15:41:45+00:00",
+ "generated": "2026-09-16T15:49:00+00:00",
  "items": [
   {
    "stem": "video_animals_top2_20260916_103456",
@@ -108,6 +108,18 @@
    "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_pugs_top3_20260916_090213&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
    "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_pugs_top3_20260916_090213&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
    "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_pugs_top3_20260916_090213&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
+  },
+  {
+   "stem": "video_raccoons_top3_20260916_113959",
+   "title": "Mama Raccoon Helps Her Young Onto the Fence",
+   "channel": "aminal",
+   "category": "raccoons",
+   "queued_at": "2026-09-16T11:46:00",
+   "size_mb": 29.9,
+   "url": "clips/video_raccoons_top3_20260916_113959.mp4",
+   "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_raccoons_top3_20260916_113959&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
+   "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_raccoons_top3_20260916_113959&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
+   "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_raccoons_top3_20260916_113959&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
   }
  ]
 }
