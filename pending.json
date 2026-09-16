@@ -1,6 +1,18 @@
 {
- "generated": "2026-09-16T14:48:07+00:00",
+ "generated": "2026-09-16T14:58:12+00:00",
  "items": [
+  {
+   "stem": "video_animals_top2_20260916_103456",
+   "title": "Wait for #1, seriously",
+   "channel": "aminal",
+   "category": "animals",
+   "queued_at": "2026-09-16T10:55:56",
+   "size_mb": 25.9,
+   "url": "clips/video_animals_top2_20260916_103456.mp4",
+   "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_animals_top2_20260916_103456&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
+   "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_animals_top2_20260916_103456&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
+   "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_animals_top2_20260916_103456&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
+  },
   {
    "stem": "video_beavers_top3_20260916_103344",
    "title": "Baby Beaver's Swim Stopped By Its Mother.",
@@ -12,6 +24,18 @@
    "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_beavers_top3_20260916_103344&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
    "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_beavers_top3_20260916_103344&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
    "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_beavers_top3_20260916_103344&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
+  },
+  {
+   "stem": "video_cats_top3_20260916_103533",
+   "title": "Spent So Much Money on Toys for This Cat. His Favorite Toy? a Coconut Leaf...",
+   "channel": "aminal",
+   "category": "cats",
+   "queued_at": "2026-09-16T10:56:27",
+   "size_mb": 25.9,
+   "url": "clips/video_cats_top3_20260916_103533.mp4",
+   "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_cats_top3_20260916_103533&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
+   "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_cats_top3_20260916_103533&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
+   "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_cats_top3_20260916_103533&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
   },
   {
    "stem": "video_frenchies_top3_20260916_091945",
