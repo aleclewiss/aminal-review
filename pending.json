@@ -1,6 +1,18 @@
 {
- "generated": "2026-09-16T13:19:00+00:00",
+ "generated": "2026-09-16T13:26:14+00:00",
  "items": [
+  {
+   "stem": "video_frenchies_top3_20260916_091945",
+   "title": "Save this for a bad day",
+   "channel": "aminal",
+   "category": "frenchies",
+   "queued_at": "2026-09-16T09:24:44",
+   "size_mb": 30.5,
+   "url": "clips/video_frenchies_top3_20260916_091945.mp4",
+   "approve_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=approve%3A%20video_frenchies_top3_20260916_091945&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
+   "reject_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=reject%3A%20video_frenchies_top3_20260916_091945&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it.",
+   "hold_issue": "https://github.com/aleclewiss/aminal-review/issues/new?title=hold%3A%20video_frenchies_top3_20260916_091945&body=Submit%20this%20issue%20to%20record%20your%20decision.%20Your%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it."
+  },
   {
    "stem": "video_goldens_top3_20260916_090315",
    "title": "Does Anyone Else Have a Howler?",
